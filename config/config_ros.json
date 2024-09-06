@@ -40,9 +40,9 @@
     "points_time_offset": 0.0,
     "acc_scale": 1.0,
     // TF config
-    "imu_frame_id": "imu",
-    "lidar_frame_id": "lidar",
-    "base_frame_id": "",
+    "imu_frame_id": "imu_1_link",
+    "lidar_frame_id": "lidar3D_1_link",
+    "base_frame_id": "base_link",
     "odom_frame_id": "odom",
     "map_frame_id": "map",
     "publish_imu2lidar": true,
@@ -55,8 +55,8 @@
       // "libimu_validator.so"
     ],
     // Topics
-    "imu_topic": "/os_cloud_node/imu",
-    "points_topic": "/os_cloud_node/points",
+    "imu_topic": "/imu",
+    "points_topic": "/lidar/points",
     "image_topic": "/image"
   }
 }
