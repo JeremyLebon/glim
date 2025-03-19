@@ -40,8 +40,8 @@
     "points_time_offset": 0.0,
     "acc_scale": 1.0,
     // TF config
-    "imu_frame_id": "imu_1_link",
-    "lidar_frame_id": "lidar3D_1_link",
+    "imu_frame_id": "camera_imu_frame",
+    "lidar_frame_id": "lidar2D_1_link",
     "base_frame_id": "base_link",
     "odom_frame_id": "odom",
     "map_frame_id": "map",
@@ -51,13 +51,13 @@
     "extension_modules": [
       "libmemory_monitor.so",
       "libstandard_viewer.so",
-      "librviz_viewer.so", 
+      "librviz_viewer.so",
       "libscan_context_loop_detector.so"
       // "libimu_validator.so"
     ],
     // Topics
-    "imu_topic": "/imu",
-    "points_topic": "/lidar/points",
-    "image_topic": "/image"
+    "imu_topic": "/camera/camera/imu",
+    "points_topic": "/velodyne_points",
+    "image_topic": "/camera/camera/color/image_raw"
   }
 }

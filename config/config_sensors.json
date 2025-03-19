@@ -48,10 +48,10 @@
     "imu_bias_noise": 1e-5,
     // LiDAR config
     "global_shutter_lidar": false,
-    "T_lidar_imu": [
-      0.006,
-      -0.012,
-      0.008,
+   "T_lidar_imu": [
+      0.07,
+      0.0,
+      -0.06,
       0.0,
       0.0,
       0.0,
